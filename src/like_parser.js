@@ -15,12 +15,8 @@
     }
 
     const text = String(rawText).trim();
-    const cleaned = text
-      .replace(/likes?/i, "")
-      .replace(/,/g, "")
-      .trim();
-
-    const match = cleaned.match(/^([0-9]*\.?[0-9]+)\s*([KMB])?$/i);
+    const cleaned = text.replace(/,/g, "");
+    const match = cleaned.match(/([0-9]*\.?[0-9]+)\s*([KMB])?/i);
     if (!match) {
       return null;
     }
