@@ -19,6 +19,7 @@ Hide X posts above a like threshold with a whitelist for specific handles.
 - Open the extension popup to toggle enabled state, set the threshold, and manage the whitelist.
 - Hidden posts show a placeholder with "Show" and "Whitelist" actions.
 
+![Extension screenshot](assets/x_filter_example.png)
 ![Usage preview](assets/usage.gif)
 
 ## Development
