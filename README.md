@@ -10,10 +10,24 @@ Hide X posts above a like threshold with a whitelist for specific handles.
 - Placeholder with Show/Whitelist buttons
 
 ## Install (Chrome)
-1. Open `chrome://extensions`.
-2. Enable Developer mode.
-3. Click "Load unpacked" and select `x-like-threshold-filter/`.
-4. Visit `https://x.com`.
+### Option A: From GitHub (ZIP)
+1. Go to `https://github.com/RandyVentures/x-like-threshold-filter-plugin`.
+2. Click **Code** → **Download ZIP**.
+3. Unzip the download.
+4. Open `chrome://extensions`.
+5. Enable Developer mode.
+6. Click "Load unpacked" and select the unzipped `x-like-threshold-filter-plugin` folder.
+7. Visit `https://x.com`.
+
+### Option B: From a local clone
+1. Clone the repo to your machine:
+   ```bash
+   git clone https://github.com/RandyVentures/x-like-threshold-filter-plugin.git
+   ```
+2. Open `chrome://extensions`.
+3. Enable Developer mode.
+4. Click "Load unpacked" and select the cloned `x-like-threshold-filter-plugin/` folder.
+5. Visit `https://x.com`.
 
 ## Usage
 - Open the extension popup to toggle enabled state, set the threshold, and manage the whitelist.
