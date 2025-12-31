@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "X Like Threshold Filter",
+  "version": "0.1.0",
+  "description": "Hide X posts above a like threshold with a whitelist.",
+  "action": {
+    "default_title": "X Like Filter",
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png",
+      "48": "assets/icons/icon-48.png",
+      "128": "assets/icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://x.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "js": ["src/like_parser.js", "src/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

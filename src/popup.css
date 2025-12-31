@@ -1,0 +1,104 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f2eb;
+  color: #1f1b16;
+  width: 300px;
+}
+
+.app {
+  padding: 16px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0 0 4px;
+}
+
+p {
+  margin: 0 0 12px;
+  font-size: 12px;
+  color: #5a5249;
+}
+
+.control {
+  margin-bottom: 14px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #b3a79a;
+  border-radius: 8px;
+  font-size: 13px;
+  background: #fff;
+}
+
+.hint {
+  font-size: 11px;
+  color: #7a6f64;
+  margin-top: 6px;
+}
+
+.whitelist-input {
+  display: flex;
+  gap: 6px;
+}
+
+button {
+  border: 1px solid #3a3027;
+  background: #fdf9f1;
+  color: #1f1b16;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.whitelist {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.whitelist li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  background: #fff;
+  border: 1px solid #e1d7c9;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.whitelist li button {
+  border-color: #ba3d3d;
+  color: #ba3d3d;
+  background: transparent;
+  padding: 4px 8px;
+}

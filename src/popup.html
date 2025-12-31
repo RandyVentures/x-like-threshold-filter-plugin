@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>X Like Filter</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>X Like Filter</h1>
+        <p>Hide posts above your like threshold.</p>
+      </header>
+
+      <section class="control">
+        <label class="toggle">
+          <input type="checkbox" id="enabled" />
+          <span>Enabled</span>
+        </label>
+      </section>
+
+      <section class="control">
+        <label for="threshold">Like threshold</label>
+        <input id="threshold" type="number" min="0" step="1" />
+        <p class="hint">Posts with likes greater than this number are hidden.</p>
+      </section>
+
+      <section class="control">
+        <label for="whitelist-input">Whitelist</label>
+        <div class="whitelist-input">
+          <input id="whitelist-input" type="text" placeholder="@handle" />
+          <button id="add-whitelist" type="button">Add</button>
+        </div>
+        <ul id="whitelist" class="whitelist"></ul>
+      </section>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
